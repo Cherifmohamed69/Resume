@@ -41,13 +41,13 @@ class Ninja:
 
 # Example :
 if __name__ == "__main__":
-    # Create a Pet instance
+#Create a Pet instance
     my_pet = Pet(name="Fluffy", type="Dog", tricks=["Sit", "Roll over"])
 
-    # Create a Ninja instance and assign the pet to the ninja
+    #Create a Ninja instance and assign the pet to the ninja
     my_ninja = Ninja(first_name="Hiro", last_name="Yamato", treats=5, pet_food=10, pet=my_pet)
 
-    # Perform actions with the Ninja and their Pet
+    #Perform actions with the Ninja and their Pet
     my_ninja.walk()
     my_ninja.feed()
     my_ninja.bathe()
