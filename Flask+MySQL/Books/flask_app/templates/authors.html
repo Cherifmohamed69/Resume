@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Authors</title>
+  </head>
+  <body>
+    <h1>New Author</h1>
+
+    <form method="post" action="/add_author">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" class="form-control" />
+      <input type="submit" value="Create ✨" class="btn btn-secondary" />
+    </form>
+
+    <h1>All Authors</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for author in authors %}
+        <tr>
+          <td>{{ author.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <button>
+      <a href="/books">Add Book 📕</a>
+    </button>
+  </body>
+</html>

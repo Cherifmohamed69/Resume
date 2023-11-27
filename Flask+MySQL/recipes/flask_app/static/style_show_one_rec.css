@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: "Arial", sans-serif;
+  }
+
+  h1,
+  h3,
+  h4 {
+    color: #080808;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin-right: 10px;
+  }
+
+  .recipe-details {
+    margin: 20px 0;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f6cbf6;
+  }
+
+  th {
+    background-color: rgb(197, 139, 218);
+    color: white;
+  }
+
+  .actions {
+    text-align: right;
+  }
+
+
+
