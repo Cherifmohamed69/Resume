@@ -15,7 +15,7 @@
 
   <body>
     <div class="d-flex justify-content-between m-5">
-      <h2>Welcome, {{user.first_name}}</h2>
+      <h2>Welcome, {{user.first_name}} 👋🏻</h2>
       <div>
         <a href="/recipes/new" class="btn btn-warning">Create</a>
         <a href="/logout" class="btn btn-danger">LOGOUT</a>
@@ -36,10 +36,10 @@
           <td>{%if recipe.under == 1%} Yes {%else%} No {%endif%}</td>
           <td>{{recipe.poster}}</td>
           <td>
-            <a href="/recipes/{{recipe.id}}">view recipe</a>
+            <a href="/recipes/{{recipe.id}}">View Recipe </a>
             {%if recipe.user_id == session['user_id'] %} |
-            <a href="/recipes/{{recipe.id}}/edit"> edit</a> |
-            <a href="/recipes/{{recipe.id}}/destroy"> delete</a>
+            <a href="/recipes/{{recipe.id}}/edit"> Edit</a> |
+            <a href="/recipes/{{recipe.id}}/destroy"> Delete ✖</a>
             {%endif%}
           </td>
         </tr>

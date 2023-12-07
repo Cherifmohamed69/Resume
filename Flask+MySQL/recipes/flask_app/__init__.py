@@ -1,5 +1,4 @@
-# __init__.py
 from flask import Flask
 app = Flask(__name__)
-app.secret_key = "topsecretkeythatnooneshouldknow"
+app.secret_key = "Cherifffff"
 DATABASE = "recipes_db"
