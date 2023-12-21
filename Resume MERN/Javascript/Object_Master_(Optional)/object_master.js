@@ -27,5 +27,33 @@ const pokémon = Object.freeze([
 // const bListPkmn = pokémon.filter((p) => p.name[0] === "B");
 // console.log(bListPkmn);
 
-const pkmnIds = pokémon.map((p) => p.name + " his type is " + p.types);
-console.log(pkmnIds);
+// const pkmnIds = pokémon.map((p) => p.name + " his type is " + p.types);
+// console.log(pkmnIds);
+
+// const divisibleBy3 = pokémon.filter((f) => f.id % 3 === 0);
+// console.log(divisibleBy3);
+
+//===========================================================================
+
+// const fireType = pokémon.filter((p) => p.types.includes("fire"));
+// console.log(fireType);
+
+//===========================================================================
+
+// const multiType = pokémon.filter((p) => p.types.length > 1);
+// console.log(multiType);
+
+// const names = pokémon.map((p) => p.name);
+// console.log(names);
+
+// const greaterThan99 = pokémon.filter((p) => p.id > 99).map((p) => p.name);
+// console.log(greaterThan99);
+
+// const poison = pokémon.filter((p) => p.types.includes("poison")).map((p) => p.name);
+// console.log(poison);
+
+// const flying = pokémon.filter((p) => p.types.includes("flying")).map((p) => p.types[0]);
+// console.log(flying);
+
+const normal = pokémon.filter((p) => p.types.includes("normal")).length;
+console.log(normal);
